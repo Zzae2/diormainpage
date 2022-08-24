@@ -1,0 +1,392 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+@media screen and (max-width: 1024px){
+    .wrap {
+        width: 100%;
+        height: 100vh;
+    }
+    #header .inner {
+        position: relative;
+    }
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+    }
+    #header .nav {
+        left: 500px;
+        transform: translateY(0);
+        font-size: 12px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: #fff;
+        z-index: 9999;
+        padding: 50px;
+        display: block;
+    }
+    #header .nav .depth1 > li{
+        display: block;    
+    }
+    #header .nav .depth1 > li > a {
+        font-weight: 700;
+        display: block;
+    }   
+    #header .nav .depth2 {
+        position: static;
+        top: 100%;
+        left: 0;
+        width: auto;
+        background-color: #fff;
+        z-index: 99;
+        display: block;
+    }
+    #header h1 {
+        font-family: 'Cinzel', serif;
+        font-size: 35px;
+        text-align: left;
+    }
+    #header .icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translatey(-50%);
+    }
+    #header .icon a {
+        padding: 0 3px;
+    }
+    #header .rwdbar {
+        display: inline-block;
+    }
+    #header .rwdsearch {
+        display: none;
+    }
+    #header .searchbox {
+        display: block;
+        padding-top: 7px;
+    }
+    #header .searchbox input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid #000;
+        outline: none;
+    }
+    #section1 {
+        margin-top: 100px;
+    }
+    #section1 article {
+        padding: 400px 0;
+        width: 50%;
+        float: left;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+    #section1 article:first-child {
+        background: url(../images/cdc-dispatch3_1440_1200.jpg);
+    }
+    #section1 article:last-child {
+        background-image: url(../images/lcp-push-nav-visuel-texte-bas5_1440_1200.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #section1 article p {
+        font-size: 14px;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    #section1 article:hover p {
+        opacity: 1;
+    }
+    #section2 {
+        font-size: 13px;
+    }
+    #section2 .inner {
+        padding: 2.5rem;
+    }
+    #section2 .content {
+        overflow: hidden;
+    }
+    #section2 .content > li {
+        float: left;
+        width: 25%;
+        line-height: 3em;
+    }
+    #section2 .findshop li a {
+        position: relative;
+    }
+    #section2 .findshop li a::after {
+        content: '';
+        height: 1px;
+        background: #757575;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 100%;
+        transform: translatey(-5px);
+        transition: all 0.5s;
+    }
+    #section2 .findshop li:hover a::after {
+        right: 0;
+        
+    }
+    #section2 .findshop li:hover a {
+        color: #757575;
+    }
+    #section2 li{
+        overflow: hidden;
+    }
+    #section2 .supply a {
+        float: left;
+    }
+    #section2 .supply i {
+        float: right;
+        transform: translate(-50px, 10px);
+        font-size: 14px;
+    }
+    #section2 .supply li:hover {
+        color: #757575;
+    }
+    #section2 .diorhouse  li:nth-child(1),
+    #section2 .diorhouse  li:nth-child(3),
+    #section2 .diorhouse  li:nth-child(4){
+        overflow: hidden;
+    }
+    #section2 .diorhouse  li:nth-child(1) a,
+    #section2 .diorhouse  li:nth-child(3) a,
+    #section2 .diorhouse  li:nth-child(4) a{
+        float: left;
+    }
+    #section2 .diorhouse  li:nth-child(1) i,
+    #section2 .diorhouse  li:nth-child(3) i,
+    #section2 .diorhouse  li:nth-child(4) i{
+        float: right;
+        transform: translate(-50px, 10px);
+        font-size: 14px;
+    }
+    #section2 .diorhouse li:nth-child(2) a,
+    #section2 .diorhouse li:nth-child(5) a{
+        position: relative;
+    }
+    #section2 .diorhouse li:nth-child(2) a::after,
+    #section2 .diorhouse li:nth-child(5) a::after{
+        content: '';
+        height: 1px;
+        background: #757575;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 100%;
+        transform: translatey(-5px);
+        transition: all 0.5s;
+    }
+    #section2 .diorhouse li:nth-child(2):hover a::after,
+    #section2 .diorhouse li:nth-child(5):hover a::after{
+        right: 0;
+    }
+    #section2 .diorhouse li:hover {
+        color: #757575;
+    }
+    #footer .footer_content {
+        border-top: 1px solid #ddd;
+        padding: 2.5rem;
+        font-size: 11px;
+        color: #757575;
+        line-height: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .wrap {
+        width: 100%;
+        height: 100vh;
+    }
+    #header .inner {
+        position: relative;
+    }
+    #header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+    }
+    #header .nav {
+        position: relative;
+    }
+    #header .nav .depth1 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translatey(-50%);
+        font-size: 12px;
+        display: none;
+    }
+    #header h1 {
+        font-family: 'Cinzel', serif;
+        font-size: 24px;
+        text-align: left;
+    }
+    #header .icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translatey(-50%);
+    }
+    #header .icon a {
+        padding: 0 3px;
+    }
+    #header .rwdbar {
+        display: inline-block;
+    }
+    #header .rwdsearch {
+        display: none;
+    }
+    #header .searchbox {
+        display: block;
+        padding-top: 7px;
+    }
+    #header .searchbox input {
+        width: 100%;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid #000;
+        outline: none;
+    }
+    #section1 {
+        margin-top: 100px;
+    }
+    #section1 article {
+        padding: 200px 0;
+        width: 100%;
+        float: left;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+    }
+    #section1 article:first-child {
+        background: url(../images/cdc-dispatch3_1440_1200.jpg);
+    }
+    #section1 article:last-child {
+        background-image: url(../images/lcp-push-nav-visuel-texte-bas5_1440_1200.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    #section1 article p {
+        font-size: 14px;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    #section1 article:hover p {
+        opacity: 1;
+    }
+    #section2 {
+        font-size: 13px;
+    }
+    #section2 .inner {
+        padding: 2.5rem;
+    }
+    #section2 .content {
+        overflow: hidden;
+    }
+    #section2 .content > li {
+        float: left;
+        width: 100%;
+        line-height: 3em;
+        margin-bottom: 30px;
+    }
+    #section2 .findshop li a {
+        position: relative;
+    }
+    #section2 .findshop li a::after {
+        content: '';
+        height: 1px;
+        background: #757575;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 100%;
+        transform: translatey(-5px);
+        transition: all 0.5s;
+    }
+    #section2 .findshop li:hover a::after {
+        right: 0;
+        
+    }
+    #section2 .findshop li:hover a {
+        color: #757575;
+    }
+    #section2 li{
+        overflow: hidden;
+    }
+    #section2 .supply a {
+        float: left;
+    }
+    #section2 .supply i {
+        float: right;
+        transform: translate(-50px, 10px);
+        font-size: 14px;
+    }
+    #section2 .supply li:hover {
+        color: #757575;
+    }
+    #section2 .diorhouse  li:nth-child(1),
+    #section2 .diorhouse  li:nth-child(3),
+    #section2 .diorhouse  li:nth-child(4){
+        overflow: hidden;
+    }
+    #section2 .diorhouse  li:nth-child(1) a,
+    #section2 .diorhouse  li:nth-child(3) a,
+    #section2 .diorhouse  li:nth-child(4) a{
+        float: left;
+    }
+    #section2 .diorhouse  li:nth-child(1) i,
+    #section2 .diorhouse  li:nth-child(3) i,
+    #section2 .diorhouse  li:nth-child(4) i{
+        float: right;
+        transform: translate(-50px, 10px);
+        font-size: 14px;
+    }
+    #section2 .diorhouse li:nth-child(2) a,
+    #section2 .diorhouse li:nth-child(5) a{
+        position: relative;
+    }
+    #section2 .diorhouse li:nth-child(2) a::after,
+    #section2 .diorhouse li:nth-child(5) a::after{
+        content: '';
+        height: 1px;
+        background: #757575;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 100%;
+        transform: translatey(-5px);
+        transition: all 0.5s;
+    }
+    #section2 .diorhouse li:nth-child(2):hover a::after,
+    #section2 .diorhouse li:nth-child(5):hover a::after{
+        right: 0;
+    }
+    #section2 .diorhouse li:hover {
+        color: #757575;
+    }
+    #footer .footer_content {
+        border-top: 1px solid #ddd;
+        padding: 2.5rem;
+        font-size: 11px;
+        color: #757575;
+        line-height: 20px;
+    }
+    
+}

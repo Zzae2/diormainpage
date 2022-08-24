@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+}
+#header .inner {
+    position: relative;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+}
+#header .nav {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    /* border: 1px solid #000; */
+}
+#header .nav .depth1 > li{
+    display: inline-block;  
+}
+#header .nav .depth1 > li > a{
+    padding: 20px 3px;    
+}
+#header .nav .depth1 > li > a:hover {
+    font-weight: 700;
+}
+#header .nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 800px;
+    background-color: #fff;
+    z-index: 99;
+    display: none;
+    /* border: 1px solid #000; */
+}
+#header .nav .depth2 > li {
+    display: inline-block;
+}
+#header .nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+#header .nav .depth2 > li > a {
+    padding: 20px 10px 20px 0;
+}
+#header .nav .depth2 > li > a:hover {
+    font-weight: 700;
+}
+#header .deco {
+    position: absolute;
+    top: 130%;
+    left: 0; 
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    z-index: -1 ;
+    display: none;
+    /* border: 1px solid #000; */
+}
+#header .nav:hover + .deco {
+    display: block;
+}
+#header .rwdbar {
+    display: none;
+}
+#header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 35px;
+    text-align: center;
+}
+#header .icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translatey(-50%);
+}
+#header .icon a {
+    padding: 0 3px;
+}
+#header .searchbox {
+    display: none;
+}
+#header .barx {
+    display: none;
+}
+
+
+
+
+
+#footer .footer_content {
+    border-top: 1px solid #ddd;
+    padding: 2.5rem;
+    font-size: 11px;
+    color: #757575;
+    line-height: 20px;
+}
